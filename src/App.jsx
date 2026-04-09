@@ -1,6 +1,7 @@
 import react from "react";
 import { useState, useEffect, useRef } from "react";
 import emailjs from "@emailjs/browser";
+import img from "./assets/image.png";
 
 // ─── DATA ────────────────────────────────────────────────────────────────────
 const NAV_LINKS = ["Home","About","Projects","Experience","Resume","Contact"];
@@ -440,7 +441,7 @@ export default function App() {
                 boxShadow:`0 0 60px var(--accent-dim)`,
               }}>
 <img 
-  src="src/assets/image.png" 
+  src={img}
   alt="Farmaish Ali"
   style={{
     width: "100%",
